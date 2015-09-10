@@ -31,7 +31,8 @@ http-server
   No matter where a variable is declared, it will always be brought to the top of the scope where it is defined when javascript reads it.
   
 1. What is a callback? Why do we use them in JavaScript? Provide your answer, and code a simple example below.
- A callback is a function that executes when a specific event or function has occured.  These are often used to work with the asynchronous nature of javascript.
+
+ A callback is a function that is used as an argument in another function.  These are often used to work with the asynchronous nature of javascript.
 
 example 
 '''$.ajax({URL: "www.google.com"}).done(function(data, callbackFunction){callbackFunction(data))}
@@ -70,12 +71,12 @@ GET POST DELETE PUT
 
 1. Why did we use Promises when dealing with asynchronous XHR calls?
   **Student answer:**
-Promises prevent the dreaded nested callback tower of doom by chaining functions in a visibly logic way.
+Promises prevent the dreaded nested callback tower of doom by chaining functions in a visibly logical way.
 
 1. Provide a simple example of the syntax for handling a Promise.
   **Student answer:**
 var theFunction = promise;
-promise
+theFunction
 .then(function(data){
 console.log(data);
 })
