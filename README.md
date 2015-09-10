@@ -66,18 +66,31 @@ example
 1. Write a function named `getAnimals` that uses the jQuery `ajax` method to retrieve the `data/animals.json` file. When you execute the functions, it should just log *just the array* of animals to the console when the async is complete. Make sure you provide a prompt of "animals" when logging the array.
 1. What are the four HTTP verbs that you can use in an XHR that correspond to the CRUD actions (create, read, update, delete)?
   **Student answer:**
+GET POST DELETE PUT
 
 1. Why did we use Promises when dealing with asynchronous XHR calls?
   **Student answer:**
+Promises prevent the dreaded nested callback tower of doom by chaining functions in a visibly logic way.
 
 1. Provide a simple example of the syntax for handling a Promise.
   **Student answer:**
+var theFunction = promise;
+promise
+.then(function(data){
+console.log(data);
+})
+.fail(function(err){
+console.log(err);
+})
+.done();
 
 ## Scope and this
 
 What gets logged to the console when the following code executes? Explain why.
 
 **Student answer: **
+
+42 is logged to the console because the original call site is in the global scope.  The this in this.answer is reffering to the scope of the call site.  If the this were removed you would get the 666 instead.
 
 ```
 var answer = "42";
