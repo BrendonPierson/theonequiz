@@ -28,8 +28,13 @@ http-server
 ## JavaScript concepts
 1. Explain what hoisting is. Provide your answer below.
 
-  **Student answer: **
+  No matter where a variable is declared, it will always be brought to the top of the scope where it is defined when javascript reads it.
+  
 1. What is a callback? Why do we use them in JavaScript? Provide your answer, and code a simple example below.
+ A callback is a function that executes when a specific event or function has occured.  These are often used to work with the asynchronous nature of javascript.
+
+example 
+'''$.ajax({URL: "www.google.com"}).done(function(data, callbackFunction){callbackFunction(data))}
 
   **Student answer: **
 
