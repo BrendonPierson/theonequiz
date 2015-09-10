@@ -13,12 +13,10 @@ var FruitMaker = (function (fruitMaker){
     return sliced;
   }
 
-  return {
-    fruitMaker
-  };
+  return fruitMaker
   
 })(FruitMaker);
 
 
 console.log("FruitMaker", FruitMaker);
-console.log("fruit slices", FruitMaker.fruitMaker.slices("bananas", 5));
+console.log("fruit slices", FruitMaker.slices("bananas", 5));

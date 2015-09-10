@@ -23,23 +23,27 @@ function subtract(x, y) {
 }
 
 var Planets = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"];
+
 function sortedPlanets(arr) {
-  return arr.sort();
+  var sorted = arr.sort();
+  return sorted;
 }
 console.log("sortedPlanets", sortedPlanets(Planets));
 
 function reversed(arr) {
+  var reverse = [];
   for (var i = 0; i < arr.length; i++) {
-    arr[i] = arr[i].split('').reverse().join('');
+    reverse[i] = arr[i].split('').reverse().join('');
   };
-  return arr;
+  return reverse;
 }
 console.log("reversed", reversed(Planets));
 
 function longPlanets(arr){
-  return arr.filter(function(n){
+  var longP = arr.filter(function(n){
     return n.length > 6;
   });
+  return longP;
 }
 console.log("longPlanets", longPlanets(Planets));
 
